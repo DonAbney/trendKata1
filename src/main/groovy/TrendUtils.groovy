@@ -3,7 +3,11 @@ package com.pillar.battle
 class TrendUtils {
 
   def static findTrend(input) {
-    null
+    if (input) {
+      return 0
+    }
+
+    return null
   }
 
 }

@@ -11,4 +11,13 @@ class TrendUtilsTests {
     assert null == TrendUtils.findTrend(l)
   }
 
+  @Test
+  void returnsNullWhenWhenListIsNull() {
+    assert null == TrendUtils.findTrend(null);
+  }
+
+  @Test
+  void returns0WhenWhenListHasOneValue() {
+    assert 0 == TrendUtils.findTrend([1]);
+  }
 }
