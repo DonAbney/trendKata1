@@ -20,4 +20,9 @@ class TrendUtilsTests {
   void returns0WhenWhenListHasOneValue() {
     assert 0 == TrendUtils.findTrend([1]);
   }
+
+  @Test
+  void givenTwoNumbersReturns1WhenFirstNumberIsZeroAndSecondIsNonZero() {
+    assert 1.0 == TrendUtils.findTrend([0, 2]);
+  }
 }
