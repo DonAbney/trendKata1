@@ -25,4 +25,14 @@ class TrendUtilsTests {
   void givenTwoNumbersReturns1WhenFirstNumberIsZeroAndSecondIsNonZero() {
     assert 1.0 == TrendUtils.findTrend([0, 2]);
   }
+
+  @Test
+  void givenTwoNumberstheSameReturnZero() {
+    assert 0 == TrendUtils.findTrend([2, 2]);
+  }
+
+  @Test
+  void givenTwoDifferentNumbersWithFirstAsNonZeroReturnsAverage() {
+    assert 3 == TrendUtils.findTrend([2, 4]);
+  }
 }
