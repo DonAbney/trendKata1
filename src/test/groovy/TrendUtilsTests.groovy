@@ -32,7 +32,7 @@ class TrendUtilsTests {
   }
 
   @Test
-  void givenTwoDifferentNumbersWithFirstAsNonZeroReturnsAverage() {
-    assert 3 == TrendUtils.findTrend([2, 4]);
+  void givenTwoDifferentNumbersWithFirstAsNonZeroReturnsDividedTrend() {
+    assert 1 == TrendUtils.findTrend([2, 4]);
   }
 }
